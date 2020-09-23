@@ -11,29 +11,37 @@
       <!-- Navbar -->
       <nav class="nav">
         <div class="nav__social">
-          <div class="social__icon"></div>
+          <div class="social__icon">
+            <img src="/public/img/bullhorn-solid.svg" />
+          </div>
           <div class="social__dropdown">
             <div class="dropdown">
-              <a href="dropdown__link">
-                <img src="" alt="" class="dropdown__img" />
+              <a class="dropdown__link">
+                <img src="https://duckduckgo.com/assets/icons/header/twitter.svg" alt="" class="dropdown__img" />
                 <span>Twitter</span>
               </a>
             </div>
             <div class="dropdown">
-              <a href="dropdown__link">
-                <img src="" alt="" class="dropdown__img" />
+              <a class="dropdown__link">
+                <img src="https://duckduckgo.com/assets/icons/header/reddit.svg" alt="" class="dropdown__img" />
                 <span>Reddit</span>
               </a>
             </div>
             <div class="dropdown">
-              <a href="dropdown__link">
-                <img src="" alt="" class="dropdown__img" />
+              <a class="dropdown__link">
+                <img src="https://duckduckgo.com/assets/icons/header/blog.svg" alt="" class="dropdown__img" />
                 <span>Blog</span>
+              </a>
+            </div>
+            <div class="dropdown">
+              <a class="dropdown__link">
+                <img src="https://duckduckgo.com/assets/icons/header/newsletter.svg" alt="" class="dropdown__img" />
+                <span>Newsletter</span>
               </a>
             </div>
           </div>
         </div>
-        <div class="nav__menu-openbtn">Open Menu</div>
+        <div class="nav__menu-openbtn"><img src="/public/img/menu.svg" alt="" /></div>
         <div class="nav__manu">
           <header class="menu__header">
             <span>Settings</span>
@@ -43,59 +51,61 @@
         </div>
       </nav>
     </header>
-    <!-- About information -->
-    <div class="intro-info">
-      <div class="logo">
-        <a href="#" class="logo__img"></a>
-        <span class="logo__title"> DuckDuckGo </span>
+
+    <main>
+      <!-- About information -->
+      <div class="intro-info">
+        <div class="logo">
+          <a href="#" class="logo__img"></a>
+        </div>
+
+        <div class="search">
+          <input type="text" class="search__fleid" placeholder="Search the web without being tracked" />
+          <button class="search__btn"><img src="/public/img/search-solid.svg" alt="" /></button>
+        </div>
       </div>
 
-      <div class="search">
-        <input type="text" class="search__fleid" />
-        <button class="search__btn"></button>
+      <div class="badge">
+        <h1 class="badge__title">Tired of being tracked online? We can help.</h1>
+        <p class="badge__subtitle">Get seamless privacy protection on your browser for free with one download:</p>
+
+        <ol class="badge__bullets">
+          <li class="badge__bullet">
+            <svg class="check badge-link__bullet-check" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="8" cy="8" r="8" fill="#678FFF"></circle>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4.45723 7.54277C4.0667 7.9333 4.0667 8.56646 4.45723 8.95698L5.88758 10.3873L5.88747 10.3875L6.5432 11.0432C6.95322 11.4532 7.62489 11.4297 8.00519 10.992L11.8251 6.59531C12.1687 6.19989 12.1479 5.60609 11.7775 5.23569C11.3684 4.82668 10.6984 4.85016 10.3191 5.28681L7.20253 8.87386L5.87144 7.54277C5.48092 7.15225 4.84775 7.15225 4.45723 7.54277Z"
+                fill="white"
+              ></path></svg
+            ><span>Private Search</span>
+          </li>
+          <li class="badge__bullet">
+            <svg class="check badge-link__bullet-check" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="8" cy="8" r="8" fill="#678FFF"></circle>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4.45723 7.54277C4.0667 7.9333 4.0667 8.56646 4.45723 8.95698L5.88758 10.3873L5.88747 10.3875L6.5432 11.0432C6.95322 11.4532 7.62489 11.4297 8.00519 10.992L11.8251 6.59531C12.1687 6.19989 12.1479 5.60609 11.7775 5.23569C11.3684 4.82668 10.6984 4.85016 10.3191 5.28681L7.20253 8.87386L5.87144 7.54277C5.48092 7.15225 4.84775 7.15225 4.45723 7.54277Z"
+                fill="white"
+              ></path></svg
+            ><span>Tracker Blocking</span>
+          </li>
+          <li class="badge__bullet">
+            <svg class="check badge-link__bullet-check" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="8" cy="8" r="8" fill="#678FFF"></circle>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4.45723 7.54277C4.0667 7.9333 4.0667 8.56646 4.45723 8.95698L5.88758 10.3873L5.88747 10.3875L6.5432 11.0432C6.95322 11.4532 7.62489 11.4297 8.00519 10.992L11.8251 6.59531C12.1687 6.19989 12.1479 5.60609 11.7775 5.23569C11.3684 4.82668 10.6984 4.85016 10.3191 5.28681L7.20253 8.87386L5.87144 7.54277C5.48092 7.15225 4.84775 7.15225 4.45723 7.54277Z"
+                fill="white"
+              ></path></svg
+            ><span>Site Encryption</span>
+          </li>
+        </ol>
+        <a href="" class="badge__btn"></a>
       </div>
-    </div>
-
-    <div class="badge">
-      <h1 class="badge__title">Tired of being tracked online? We can help.</h1>
-      <p class="badge__subtitle">Get seamless privacy protection on your browser for free with one download:</p>
-
-      <ol class="badge__bullets">
-        <li class="badge__bullet">
-          <svg class="check badge-link__bullet-check" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="8" cy="8" r="8" fill="#678FFF"></circle>
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M4.45723 7.54277C4.0667 7.9333 4.0667 8.56646 4.45723 8.95698L5.88758 10.3873L5.88747 10.3875L6.5432 11.0432C6.95322 11.4532 7.62489 11.4297 8.00519 10.992L11.8251 6.59531C12.1687 6.19989 12.1479 5.60609 11.7775 5.23569C11.3684 4.82668 10.6984 4.85016 10.3191 5.28681L7.20253 8.87386L5.87144 7.54277C5.48092 7.15225 4.84775 7.15225 4.45723 7.54277Z"
-              fill="white"
-            ></path></svg
-          ><span>Private Search</span>
-        </li>
-        <li class="badge__bullet">
-          <svg class="check badge-link__bullet-check" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="8" cy="8" r="8" fill="#678FFF"></circle>
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M4.45723 7.54277C4.0667 7.9333 4.0667 8.56646 4.45723 8.95698L5.88758 10.3873L5.88747 10.3875L6.5432 11.0432C6.95322 11.4532 7.62489 11.4297 8.00519 10.992L11.8251 6.59531C12.1687 6.19989 12.1479 5.60609 11.7775 5.23569C11.3684 4.82668 10.6984 4.85016 10.3191 5.28681L7.20253 8.87386L5.87144 7.54277C5.48092 7.15225 4.84775 7.15225 4.45723 7.54277Z"
-              fill="white"
-            ></path></svg
-          ><span>Tracker Blocking</span>
-        </li>
-        <li class="badge__bullet">
-          <svg class="check badge-link__bullet-check" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="8" cy="8" r="8" fill="#678FFF"></circle>
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M4.45723 7.54277C4.0667 7.9333 4.0667 8.56646 4.45723 8.95698L5.88758 10.3873L5.88747 10.3875L6.5432 11.0432C6.95322 11.4532 7.62489 11.4297 8.00519 10.992L11.8251 6.59531C12.1687 6.19989 12.1479 5.60609 11.7775 5.23569C11.3684 4.82668 10.6984 4.85016 10.3191 5.28681L7.20253 8.87386L5.87144 7.54277C5.48092 7.15225 4.84775 7.15225 4.45723 7.54277Z"
-              fill="white"
-            ></path></svg
-          ><span>Site Encryption</span>
-        </li>
-      </ol>
-      <a href="" class="badge__btn"></a>
-    </div>
+    </main>
   </body>
 </html>

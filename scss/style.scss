@@ -1,4 +1,8 @@
-$light-color: #f7f7f7;
+$light-color1: #ffffff;
+$light-color2: #f7f7f7;
+
+$gray: #222;
+$gray2: #666;
 
 *,
 *::before,
@@ -9,5 +13,141 @@ $light-color: #f7f7f7;
 }
 
 body {
-  background-color: $light-color;
+  background-color: $light-color2;
+  font-family: Arial, sans-serif;
+}
+img {
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  padding: 23px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  a {
+    color: $gray2;
+    text-decoration: none;
+  }
+
+  &__social {
+    position: absolute;
+    padding-right: 60px;
+  }
+
+  .social__icon {
+    width: 21px;
+    filter: opacity(0.4);
+  }
+  .social__dropdown {
+    visibility: hidden;
+    position: absolute;
+    background-color: $light-color1;
+    padding: 18px 0;
+    width: 130px;
+    box-shadow: 0 2.5px 20px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    top: 40px;
+    right: 40px;
+
+    .dropdown {
+      margin-bottom: 15px;
+      font-size: 0.9rem;
+
+      &__link {
+        display: flex;
+        margin: 0 15px;
+        align-items: center;
+      }
+      &__img {
+        margin-right: 10px;
+        width: 20px;
+      }
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+  .nav__menu-openbtn {
+    img {
+      width: 20px;
+      filter: opacity(0.6);
+    }
+  }
+
+  &__manu {
+    position: absolute;
+    display: none;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.intro-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1270px;
+  margin: 0 auto;
+
+  .logo {
+    background-image: url("https://duckduckgo.com/assets/logo_homepage.normal.v108.svg");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 162px;
+    margin: 14px 0 40px;
+  }
+
+  .search {
+    display: flex;
+    padding-left: 0.75rem;
+    align-items: center;
+    height: 2.8rem;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.06);
+    background-color: #fff;
+    width: 100%;
+    flex: 1 0 auto;
+    width: 665px;
+    border-radius: 4px;
+
+    input {
+      border: none;
+      width: 100%;
+      font-size: 0.9em;
+      font-weight: normal;
+      line-height: 1;
+      padding-left: 10px;
+    }
+
+    button {
+      width: 70px;
+      border: none;
+      height: 100%;
+      line-height: 1;
+      background-color: #fff;
+      border-radius: 4px;
+      img {
+        width: 30%;
+        filter: opacity(0.4);
+        &:hover {
+          filter: opacity(0.1);
+        }
+      }
+
+      &:hover {
+        background-color: #66ad57;
+      }
+    }
+  }
 }
