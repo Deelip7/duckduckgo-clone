@@ -155,7 +155,7 @@ main {
 
 .badge {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 35px;
   margin-bottom: auto;
   padding: 0 0 5px;
 
@@ -223,7 +223,7 @@ main {
 .content-info {
   text-align: center;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 60px;
 
   &__items {
     display: flex;
@@ -294,6 +294,17 @@ main {
       width: 200px;
       padding-left: 20px;
       margin: 0 auto;
+    }
+  }
+  .content-info {
+    &__items {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 60px;
+      &-wrap {
+        margin-bottom: 20px;
+        width: 300px;
+      }
     }
   }
 }
