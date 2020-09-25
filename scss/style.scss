@@ -35,6 +35,10 @@ main {
   margin: 0 auto;
 }
 
+.hidden-pointer * {
+  cursor: text !important;
+}
+
 .nav {
   display: flex;
   flex-flow: row nowrap;
@@ -514,8 +518,4 @@ main {
     font-size: 17px !important;
     width: 95% !important;
   }
-}
-
-.hidden-pointer * {
-  cursor: text !important;
 }
