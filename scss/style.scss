@@ -19,6 +19,13 @@ body {
 
 img {
   width: 100%;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 main {
@@ -50,7 +57,12 @@ main {
   .social__icon {
     width: 21px;
     filter: opacity(0.4);
+    cursor: pointer;
+    &:hover {
+      filter: opacity(0.7);
+    }
   }
+
   .social__dropdown {
     visibility: hidden;
     position: absolute;
@@ -61,6 +73,8 @@ main {
     border-radius: 5px;
     top: 40px;
     right: 40px;
+    filter: opacity(0.1);
+    transition: none;
 
     .dropdown {
       margin-bottom: 15px;
@@ -91,6 +105,12 @@ main {
   &__manu {
     position: absolute;
     display: none;
+  }
+
+  .dropdown-show {
+    visibility: visible;
+    filter: opacity(1);
+    transition: all 0.3s;
   }
 }
 
@@ -128,7 +148,15 @@ main {
       font-weight: normal;
       line-height: 1;
       padding-left: 10px;
-      color: rgb(173, 173, 173);
+      color: rgb(70, 69, 69);
+
+      &::placeholder {
+        color: rgb(173, 173, 173);
+      }
+
+      &:focus {
+        outline: none;
+      }
     }
 
     button {
@@ -183,6 +211,7 @@ main {
     align-items: center;
     list-style: none;
     font-size: 15px;
+    font-weight: 600;
   }
 
   &__bullet-check {

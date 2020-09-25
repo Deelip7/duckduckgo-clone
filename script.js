@@ -28,3 +28,9 @@ function hideQuestions() {
     el.parentElement.children[0].classList.remove("faq-info__content-btn-rotate");
   });
 }
+
+function showNavMenu() {}
+
+document.querySelector(".social__icon").addEventListener("click", (e) => {
+  document.querySelector(".social__dropdown").classList.toggle("dropdown-show");
+});
