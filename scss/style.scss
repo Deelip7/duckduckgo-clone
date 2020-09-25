@@ -370,9 +370,15 @@ main {
 
     &__content-btn {
       border-radius: 50px;
+      box-shadow: none;
+      background-color: inherit;
       border: none;
       padding: 1px;
-      // transform: rotate(180deg);
+      cursor: pointer;
+    }
+
+    &__content-btn-rotate {
+      transform: rotate(180deg);
     }
 
     &__content-question {
@@ -382,6 +388,9 @@ main {
       color: #2c2e3c;
       cursor: pointer;
     }
+    .hidden-pointer {
+      cursor: text;
+    }
 
     &__content-answer {
       margin-left: 25px;
@@ -389,8 +398,17 @@ main {
       color: #47484f;
       line-height: 2;
       overflow: hidden;
-      height: 0;
-      padding: 0;
+      padding: 0px 30px;
+      max-height: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      transition: all 0.5s;
+    }
+
+    &__answer-show {
+      transition: all 0.5s;
+      max-height: 225px;
+      padding: 20px 30px;
     }
 
     &__btn {
