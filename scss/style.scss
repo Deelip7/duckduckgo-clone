@@ -255,6 +255,11 @@ main {
   margin-top: 60px;
   overflow: hidden;
 
+  a {
+    color: #678fff !important;
+    text-decoration: none;
+  }
+
   &__items {
     display: flex;
     flex-direction: row;
@@ -417,9 +422,6 @@ main {
       color: #2c2e3c;
       cursor: pointer;
     }
-    .hidden-pointer {
-      cursor: text;
-    }
 
     &__content-answer {
       margin-left: 25px;
@@ -512,4 +514,8 @@ main {
     font-size: 17px !important;
     width: 95% !important;
   }
+}
+
+.hidden-pointer * {
+  cursor: text !important;
 }

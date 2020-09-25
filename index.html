@@ -105,8 +105,8 @@
             ><span>Site Encryption</span>
           </li>
         </ol>
-        <a href="https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-for-firefox/" class="badge__btn">
-          <span>Add DuckDuckGo to Firefox</span>
+        <a class="badge__btn">
+          <span class="add-browser">Add DuckDuckGo</span>
         </a>
       </div>
       <!-- Content Info -->
@@ -117,21 +117,27 @@
             <div class="content-info__item">
               <img src="https://duckduckgo.com/assets/add-to-browser/cppm/laptop.svg" alt="" class="content-info__item__icon" />
               <div class="content-info__item__title">Privacy for Firefox</div>
-              <div class="content-info__item__subtitle">Browse as usual, and we'll take care of the rest. We bundled our search engine, tracker blocker, and encryption enforcer into one</div>
+              <div class="content-info__item__subtitle">Browse as usual, and we'll take care of the rest. We bundled our search engine, tracker blocker, and encryption enforcer into one
+                <a class="about-btn">
+                  <span class="add-browser-content">Add DuckDuckGo</span>
+                </a>
+            </div>
             </div>
           </div>
           <div class="content-info__items-wrap">
             <div class="content-info__item">
               <img src="https://duckduckgo.com/assets/home/landing/icons/search.svg" alt="" class="content-info__item__icon" />
               <div class="content-info__item__title">Private Search Engine</div>
-              <div class="content-info__item__subtitle">Browse as usual, and we'll take care of the rest. We bundled our search engine, tracker blocker, and encryption enforcer into one</div>
+              <div class="content-info__item__subtitle">Search privately with our app or extension, add private web search to your favorite browser, or search directly at  <a href="#">duckduckgo.com</a>.</div>
+             </a>
             </div>
+
           </div>
           <div class="content-info__items-wrap">
             <div class="content-info__item">
               <img src="https://duckduckgo.com/assets/add-to-browser/cppm/mobile.svg" alt="" class="content-info__item__icon" />
               <div class="content-info__item__title">Privacy Browser App</div>
-              <div class="content-info__item__subtitle">Browse as usual, and we'll take care of the rest. We bundled our search engine, tracker blocker, and encryption enforcer into one</div>
+              <div class="content-info__item__subtitle">Our private browser for mobile comes equipped with our search engine, tracker blocker, encryption enforcer, and more. Available on <a href="https://duckduckgo.com/app">iOS & Android</a>.</div>
             </div>
           </div>
           <svg class="content-info__curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1438 134">
@@ -145,8 +151,8 @@
         <div class="about-info">
           <h2>We don’t store your personal information. Ever.</h2>
           <p>Our privacy policy is simple: we don’t collect or share any of your personal information.</p>
-          <a href="https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-for-firefox/" class="about-btn">
-            <span>Add DuckDuckGo to Firefox</span>
+          <a class="about-btn">
+            <span class="add-browser">Add DuckDuckGo</span>
           </a>
           <img src="https://duckduckgo.com/assets/onboarding/bathroomguy/1-monster-v2--pre-animation.svg" alt="" />
         </div>
@@ -156,7 +162,7 @@
       <div class="faq-info-wrap">
         <article class="faq-info">
           <h3 class="faq-info__title">Frequently Asked Questions</h3>
-          <section class="faq-info__content">
+          <section class="faq-info__content hidden-pointer">
             <button class="faq-info__content-btn faq-info__content-btn-rotate">
               <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="10" cy="10.5" r="10" transform="rotate(-180 10 10.5)" fill="#E5E5E5"></circle>
@@ -166,7 +172,7 @@
                 ></path>
               </svg>
             </button>
-            <header class="faq-info__content-question hidden-pointer">How does DuckDuckGo make money?</header>
+            <header class="faq-info__content-question">How does DuckDuckGo make money?</header>
             <div class="faq-info__content-answer faq-info__answer-show">
               <p>
                 We make our money from private ads on our search engine. On other search engines, ads are based on profiles compiled about you using your personal information like search, browsing,
@@ -289,12 +295,13 @@
             </div>
           </section>
 
-          <a href="https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-for-firefox/" class="faq-info__btn">
-            <span>Add DuckDuckGo to Firefox</span>
+          <a class="faq-info__btn">
+            <span class="add-browser">Add DuckDuckGo</span>
           </a>
         </article>
       </div>
     </main>
     <script src="/script.js"></script>
+    <script src="/browserCheck.js"></script>
   </body>
 </html>
