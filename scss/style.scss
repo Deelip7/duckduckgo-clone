@@ -130,7 +130,7 @@ main {
     background-repeat: no-repeat;
     width: 200px;
     height: 162px;
-    margin: 14px 0 40px;
+    margin-bottom: 40px;
   }
 
   .search {
@@ -195,6 +195,7 @@ main {
     color: #353748;
     padding: 0.3em 0;
     line-height: 1.3;
+    font-size: 30.5px;
   }
 
   &__bullet {
@@ -228,7 +229,6 @@ main {
   span {
     position: relative;
     color: #303243;
-    top: -1.5px;
     margin-right: 16px;
   }
 
@@ -252,17 +252,48 @@ main {
       border-color: #678fff !important;
     }
   }
+
+  .rating__star-link {
+    display: block;
+    color: #2c2e3c;
+    text-decoration: none;
+    margin: 0 auto;
+    width: 40%;
+    padding: 0;
+  }
+
+  .rating__star-wrap {
+    margin: 17px 0 40px;
+    font-size: 12px;
+    width: auto;
+
+    .rating__star {
+      position: relative;
+      margin-right: 0px;
+      color: rgb(48, 48, 48) !important;
+    }
+
+    .rating__star--half {
+      color: #d7d7d7;
+      position: relative;
+
+      &:before {
+        content: "★";
+        width: 50%;
+        color: #303030;
+        position: absolute;
+        overflow: hidden;
+        font-family: sans-serif;
+        // margin-left: 20px;
+      }
+    }
+  }
 }
+
 .content-info {
   text-align: center;
   width: 100%;
-  margin-top: 60px;
   overflow: hidden;
-
-  a {
-    color: #678fff !important;
-    text-decoration: none;
-  }
 
   &__items {
     display: flex;
@@ -270,6 +301,7 @@ main {
     justify-content: center;
     margin-top: 30px;
     position: relative;
+    margin-top: 40px;
 
     &-wrap {
       display: flex;
@@ -285,8 +317,12 @@ main {
       box-shadow: 0px 10px 16px -8px rgba(0, 0, 0, 0.2);
 
       .content-info__item {
-        margin-bottom: 6px;
         line-height: 27px;
+
+        a {
+          color: #678fff !important;
+          text-decoration: none;
+        }
 
         &__title {
           font-size: 21px;
@@ -296,6 +332,7 @@ main {
 
         &__subtitle {
           color: $gray2;
+          font-size: 15px;
         }
         img {
           width: 31%;
@@ -390,6 +427,15 @@ main {
     justify-content: center;
     align-items: center;
 
+    a {
+      color: #678fff !important;
+      text-decoration: none;
+      cursor: pointer !important;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
     &__title {
       margin: 50px 0;
       font-size: 27px;
@@ -400,7 +446,7 @@ main {
 
     &__content {
       border-top: rgba(46, 46, 46, 0.118) 1px solid;
-      padding: 25px 0;
+      padding-top: 20px;
 
       &:last-of-type {
         border-bottom: rgba(46, 46, 46, 0.118) 1px solid;
@@ -449,6 +495,7 @@ main {
     &__answer-show {
       transition: all 0.5s;
       max-height: 225px;
+      padding: 10px 0 20px;
     }
 
     &__btn {
