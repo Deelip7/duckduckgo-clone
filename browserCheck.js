@@ -74,10 +74,11 @@ function setBrowser(userBrowserName) {
 function browserInfo(userBrowserName, browerURL) {
   const browserExtension = document.querySelectorAll(".add-browser");
 
-  document.querySelector(".add-browser-content").innerText = `${userBrowserName} Extension.`;
+  document.querySelector(".rating__star-link").href = browerURL;
   document.querySelector(".add-browser-content").parentElement.href = browerURL;
-
+  document.querySelector(".add-browser-content").innerText = `${userBrowserName} Extension.`;
   document.querySelector(".content-info__item__title").innerText = `Privacy for ${userBrowserName}`;
+
   browserExtension.forEach((e) => {
     e.innerText = `Add DuckDuckGo to ${userBrowserName}`;
     e.parentElement.href = browerURL;
